@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav-logo {
+  width: 8rem;
+}
+
+.nav-center ul li {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.nav-center li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right a {
+  text-decoration: none;
+  padding-right: 1rem;
+  font-weight: bold;
+  color: black;
+  padding-left: 5px;
+}
