@@ -1,73 +1,277 @@
+/* Carousel Start */
 * {
+  box-sizing: border-box
+}
+body {
+  font-family: 'Rubik', sans-serif;
+}
+.mySlides {
+  display: none
+}
+
+.mySlides img {
+  width: 1500px;
+  height: 730px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/* Carousel End */
+
+/* Navbar Start */
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+#nav-logo {
+  width: 7rem;
+}
+
+.nav-center ul {
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
-.carousel-inner {
-  height: 100vh;
-}
-
-.container-fluid a {
-  color: white;
-}
-
-#nav-logo {
-  width: 7rem;
-}
-
-.nav-center ul {
-  margin-bottom: 0;
-}
-
 .nav-center ul li {
-  display: inline-block;
-  align-items: center;
-  padding: 1rem;
-}
-
-.nav-right a {
+  list-style: none;
   text-decoration: none;
-  padding-right: 1rem;
-  font-weight: bold;
-  /* color: black; */
-  padding-left: 5px;
+  padding: 2rem;
 }
 
-/* .container-fluid img {
-  width: 7rem;
+.nav-center ul li a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
 
-} */
-
-/* .nav-menu {
+.nav-right {
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
-
-#nav-logo {
-  width: 7rem;
+.nav-right a {
+  color: black;
+  padding-left: 10px;
+  text-decoration: none;
 }
+/* Navbar End */
 
-.nav-center ul {
-  margin-bottom: 0;
-}
-
-.nav-center ul li {
+/* About Us Start */
+.about-us {
+  background-image: url(https://ichibansushi.co.id/wp-content/uploads/2023/07/About-bg.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
   align-items: center;
-  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-us {
+  width: 50%;
+}
+
+.container-us h1 {
+  color: red;
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 1rem;
+  margin: 0;
+}
+
+.container-us p {
+  color: #717171;
   padding: 1rem;
 }
+/* About Us End */
 
-.nav-center li a {
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
+/* Our Menu Start */
+.our-menu {
+  background-image: url(https://ichibansushi.co.id/wp-content/uploads/2023/06/our-menu.png);
+  width: 100%;
+  background-repeat:repeat;
 }
 
-.nav-right a {
-  text-decoration: none;
-  padding-right: 1rem;
-  font-weight: bold;
+.container-menu {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-text {
+  width: 50%;
+}
+
+.menu-text h2 {
+  color: red;
+}
+
+.menu-text h1 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.menu-text p {
+  color: #717171;
+}
+
+.menu-img img {
+  padding-left: 5rem;
+  width: 100%;
+}
+/* Our Menu End */
+
+/* Our Location Start */
+.our-location {
+  background-image: url(https://ichibansushi.co.id/wp-content/uploads/2023/06/section_4b.png);
+}
+
+.container-loc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-img {
+  padding-right: 5rem;
+}
+
+.location-text h2 {
+  color: red;
+}
+
+.location-text h1 {
+  font-weight: bolder;
+}
+
+.location-text p {
+  color: #717171;
+}
+/* Our Location End */
+
+/* Reservation Start */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  padding: 4px 4px;
+  margin: 8px 0;
+}
+
+.reservation {
+  background-image: url(https://ichibansushi.co.id/wp-content/uploads/2023/06/our-menu.png);
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.form-reservation {
   color: black;
-  padding-left: 5px;
-} */
+  padding: 8px;
+  /* text-align: center; */
+}
+
+.form-reservation h2 {
+  text-align: center;
+}
+
+.personal-data {
+  text-align: center;
+}
+
+button[type="submit"] {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:visited {
+  padding: 15px;
+  margin: auto;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+button:active {
+  color: rgb(94, 91, 91);
+}
+/* Reservation End */
