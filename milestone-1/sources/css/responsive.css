@@ -1,0 +1,71 @@
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  
+  
+  .hamburger {
+    display: contents;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-center {
+    display: none;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .slideshow-container {
+    display: none;
+  }
+
+  .dot {
+    display: none;
+  }
+
+  /* About Us */
+  .about-us {
+    width: auto;
+    display: contents;
+  }
+
+  .container-us {
+    width: 60%;
+  }
+
+  .container-us h1 {
+    font-size: 20px;
+  }
+  /* End */
+
+  /* Our Menu */
+  .our-menu {
+    width: 65%;
+    display: center;
+  }
+
+  .container-menu {
+    margin: 0;
+    display: contents;
+  }
+
+  .menu-text {
+    width: 50%;
+    text-align: center;
+  }
+
+  .menu-text h1 {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .menu-img img {
+    padding: 0;
+    width: 50%;
+  }
+  /* End */
+}
