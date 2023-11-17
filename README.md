@@ -1,4 +1,4 @@
-![Header](readme-img/Nike.jpg)
+![Header](sources/md-img/Screenshot_1.jpg)
 
 <h1> Welcome to Ninja Sushi !</h1>
 
