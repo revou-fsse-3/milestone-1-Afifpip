@@ -4,6 +4,9 @@
 
 @media only screen and (max-width: 600px) {
   
+  .navbar {
+    align-items: center;
+  }
   
   .hamburger {
     display: contents;
@@ -35,12 +38,12 @@
 
   /* About Us */
   .about-us {
-    width: auto;
-    display: contents;
+    width: 100%;
+    display: flex;
   }
 
   .container-us {
-    width: 60%;
+    width: 100%;
   }
 
   .container-us h1 {
@@ -50,17 +53,18 @@
 
   /* Our Menu */
   .our-menu {
-    width: 65%;
-    display: center;
+    /* width: 65%; */
+    text-align: center;
   }
 
   .container-menu {
     margin: 0;
-    display: contents;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .menu-text {
-    width: 50%;
+    width: 100%;
     text-align: center;
   }
 
@@ -69,9 +73,50 @@
     font-weight: bolder;
   }
 
-  .menu-img img {
-    padding: 0;
-    width: 50%;
+  .menu-img {
+    width: 70%;
+    align-items: center;
   }
+
+  /* .menu-img img {
+    padding: 0;
+    width: 100%;
+  } */
   /* End */
+
+  .container-loc {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .location-text {
+    width: 100%;
+  }
+
+  .location-text h2 {
+    text-align: center;
+  }
+
+  .location-text h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .location-text p {
+    text-align: center;
+  }
+
+  .personal-data {
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea {
+  padding: 4px 2px;
+  margin: 8px 0;
+  }
+
 }
